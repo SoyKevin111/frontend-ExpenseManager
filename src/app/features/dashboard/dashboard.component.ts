@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeaderDashboardComponent } from '../../components/header-dashboard/header-dashboard.component';
+import { HeaderDashboardComponent } from './components/header-dashboard/header-dashboard.component';
 
 @Component({
   selector: 'app-dashboard',
