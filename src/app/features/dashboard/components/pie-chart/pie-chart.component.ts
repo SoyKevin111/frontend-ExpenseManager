@@ -22,25 +22,25 @@ export class PieChartComponent {
       top: 'center',
       left: '10%',
       orient: 'vertical',
-      icon: 'rect',  
-      itemWidth: 15,     
-      itemHeight: 15,     
+      icon: 'rect',
+      itemWidth: 15,
+      itemHeight: 15,
       textStyle: {
         fontSize: 10      // tamaño del texto
       }
     },
     series: [
       {
-        name: 'Accesos',
+        color: ['#22C55E', '#EF4444', '#2196f3', '#FACC15'], // Colores para cada sección,
+        name: 'Total',
         type: 'pie',
         radius: '70%',
         center: ['65%', '47%'],
         data: [
-          { value: 1048, name: 'Directo' },
-          { value: 735, name: 'Email' },
-          { value: 580, name: 'Publicidad' },
-          { value: 484, name: 'Búsqueda' },
-          { value: 300, name: 'Redes Sociales' }
+          { value: 1048, name: 'Ingresos', },
+          { value: 735, name: 'Gastos' },
+          { value: 580, name: 'Ahorros' },
+          { value: 484, name: 'Gastos Ahorros' }
         ],
         emphasis: {
           itemStyle: {
